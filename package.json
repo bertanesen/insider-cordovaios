@@ -1,0 +1,11 @@
+{
+  "name": "insider-cordova-sdk",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "insider-cordova-sdk",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "description": "A starting point for a Cordova Plugin"
+}

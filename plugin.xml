@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="insider-cordova-sdk"
+    version="1.0.0">
+    <name>insider</name>
+    
+    <!-- ios -->
+    <platform name="ios">
+        <js-module src="www/insider.js" name="insider">
+            <runs/>
+            <clobbers target="Insider" />
+        </js-module>
+        <config-file target="config.xml" parent="/*">
+            <feature name="InsiderCordova">
+                <param name="ios-package" value="InsiderCordova" onload="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/InsiderCordova.h" />
+        <source-file src="src/ios/InsiderCordova.m" />
+    </platform>
+</plugin>
+
